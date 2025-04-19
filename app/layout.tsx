@@ -1,7 +1,5 @@
-import Image from "next/image";
 import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
-import Link from "next/link";
 import type { RootLayoutProps } from "./types";
 import NavBar from "./components/NavBar";
 
@@ -23,7 +21,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`${albertSans.className} ${montserratAlternates.variable}`}
       >
-       <NavBar />
+        <NavBar />
         {children}
       </body>
     </html>
